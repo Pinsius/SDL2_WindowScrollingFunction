@@ -1,3 +1,9 @@
+/**
+TextTexture is name of my class that holds an info about text Rect and SDL_Texture
+    So : _rect - private variable of type SDL_Rect
+        _texture - SDL_Texture*
+**/
+
 void TextTexture::write(SDL_Renderer* renderer,int& windowHeight,int& maxHeight,float* window_camera){
     // I dont want to change the original SDL_Rect struct so im going to make a temporary copy
     SDL_Rect outRect = _rect;
